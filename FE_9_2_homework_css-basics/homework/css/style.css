@@ -1,0 +1,137 @@
+/* write your code here */
+
+/*Task 1*/
+@media print {
+	.tm-sidebar, #about, section:nth-child(n+3){
+		display:none;
+	}
+	.tm-main-content{
+		margin-left:0;
+	}
+	.flex-2-col{
+		flex-direction:column;
+	}
+	.tm-banner{
+		height:200px;
+	}
+	.pad{
+		padding:0px 50px;
+	}
+	.margin-b-10{
+		margin-bottom:10px;
+	}
+	h2.tm-section-title{
+		color:blue;
+	}
+	.tm-team-description-container{
+		max-width:100%;
+	}
+}
+
+@media screen{
+/*Task 2*/
+	#about img{								
+		border-radius:50%;
+	}
+	.gallery-container{                 
+		background-color:silver;
+	}
+	.box-bg h2:hover{					 
+		background-color:#5eafff;
+		color:#ffffff;
+		font-weight:bold;
+	}
+	
+
+/*Task 3*/
+	p:not(.tm-banner-text)::first-letter{ 
+		color:#76cdd7;
+		font-size:30px; 
+	}
+
+/*Task 4*/
+	.tm-sidebar, .tm-content-box, .blocks .tm-team-description-container{
+	 	box-shadow:0px 0px 15px #606060;
+	}
+	.tm-team-description-container{
+		max-width:100%;
+	}
+	
+/*Task 5*/
+	#home::before, section::before{
+	  content:"";
+	  display:inline-block;
+	  border-top:0px solid transparent;
+	  border-bottom:20px solid transparent;
+	  border-left:100px solid #5eafff;
+	}
+	.tm-banner{
+		padding-top:0px;
+	}
+
+/*Task 6*/
+	.active h2{
+		color:#dcdcdc;
+		letter-spacing:5px;
+	}
+
+/*Task 7*/
+	h2+p{
+		font-style:italic;
+	}
+
+/*Task 8*/
+	.tm-content-box .tm-team-description-container p{
+		text-indent:1.8em;
+		line-height:1.8;
+	}
+
+/*Task 9*/
+	.heading h2{
+		text-align:center;
+		color:#76cdd7;
+	}
+	.heading a{
+		color:#000000;
+	}
+	.heading a:visited{
+		color:silver;
+	}
+	.heading a:hover{
+		color:#76cdd7;
+		text-decoration-style:double;
+	}
+	.text::after{
+		content:"New";
+		display:inline-block;
+		color:#ff0000;
+		vertical-align: text-top;
+		font-size:12px;
+	}
+
+/*Task 10*/
+	.blocks .tm-content-box p::first-letter{
+		color:#000000;
+	}
+	.blocks .box:nth-child(2n+1){
+		background-color:#e8e1e1;
+	}
+
+/*Task 11*/
+	.tm-nav-item:not(:last-child){
+		border-bottom:1px dashed silver;
+	}
+
+/*Task 12*/
+	input[type="text"], button[type="submit"]{
+		color:#ff0000;
+	}
+	.mandatory-field::after{
+		content:"*";
+		color:#ff0000;
+		font-weight:bold;
+	}
+	.submit-btn:hover{
+		background-color:#379afc;
+	}
+}
