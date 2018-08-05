@@ -1,0 +1,181 @@
+/* line 1, ../scss/_main.scss */
+body {
+  background: #efefef;
+}
+
+/* line 5, ../scss/_main.scss */
+.main-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  font-family: serif;
+}
+
+/* line 12, ../scss/_main.scss */
+header .logo {
+  width: 40%;
+  display: inline-block;
+}
+/* line 15, ../scss/_main.scss */
+header .logo img {
+  width: 380px;
+}
+/* line 19, ../scss/_main.scss */
+header nav {
+  width: 550px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 30px;
+  border: solid #cfd8dc;
+  border-width: 1px 0px 1px 0px;
+}
+/* line 27, ../scss/_main.scss */
+header nav a {
+  width: 32.79%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #fc5830;
+}
+/* line 36, ../scss/_main.scss */
+header nav a:hover {
+  color: #ffffff;
+  background-color: #ff6034;
+}
+
+/* line 45, ../scss/_main.scss */
+.toolbar {
+  width: 100%;
+  text-align: right;
+  margin-top: 30px;
+}
+/* line 49, ../scss/_main.scss */
+.toolbar input {
+  width: 200px;
+  height: 40px;
+  text-indent: 20px;
+  display: inline-block;
+  border: 1px solid #fc5830;
+  background-color: #efefef;
+}
+/* line 56, ../scss/_main.scss */
+.toolbar input::placeholder {
+  text-indent: 20px;
+  color: #fc5830;
+  font-weight: bold;
+}
+
+/* line 64, ../scss/_main.scss */
+.post-list {
+  width: 100%;
+  font-size: initial;
+}
+/* line 67, ../scss/_main.scss */
+.post-list article {
+  width: 445px;
+  padding: 10px;
+  margin-top: 20px;
+  vertical-align: top;
+  background-color: white;
+  display: inline-block;
+}
+/* line 74, ../scss/_main.scss */
+.post-list article img {
+  width: 100%;
+}
+/* line 77, ../scss/_main.scss */
+.post-list article:nth-child(2n) {
+  margin-left: 25px;
+}
+/* line 80, ../scss/_main.scss */
+.post-list article div {
+  padding: 6px;
+}
+/* line 82, ../scss/_main.scss */
+.post-list article div .post-description {
+  color: #bdbdbd;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cfd8dc;
+}
+/* line 87, ../scss/_main.scss */
+.post-list article div h3 {
+  color: #617d8a;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+/* line 93, ../scss/_main.scss */
+.post-list article div p {
+  margin-top: 5px;
+  line-height: 25px;
+  color: #757575;
+}
+
+/* line 103, ../scss/_main.scss */
+.about h1 {
+  margin-top: 90px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #fc5830;
+}
+/* line 109, ../scss/_main.scss */
+.about p {
+  line-height: 30px;
+  color: #757575;
+}
+/* line 113, ../scss/_main.scss */
+.about img {
+  width: 100%;
+}
+
+/* line 118, ../scss/_main.scss */
+.contact-form {
+  margin-top: 60px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #fc5830;
+}
+/* line 124, ../scss/_main.scss */
+.contact-form form input, .contact-form form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #cfd8dc;
+  line-height: 50px;
+  font-size: 15px;
+  text-indent: 20px;
+  background-color: #efefef;
+}
+/* line 134, ../scss/_main.scss */
+.contact-form form input::placeholder, .contact-form form textarea::placeholder {
+  text-indent: 20px;
+  font-weight: bold;
+}
+/* line 139, ../scss/_main.scss */
+.contact-form form .message {
+  line-height: 30px;
+  height: 120px;
+}
+/* line 144, ../scss/_main.scss */
+.contact-form button {
+  width: 210px;
+  height: 40px;
+  border: none;
+  background-color: #fc5830;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+/* line 151, ../scss/_main.scss */
+.contact-form button:hover {
+  background-color: #ff6939;
+}
+
+/* line 158, ../scss/_main.scss */
+footer {
+  color: #757575;
+  font-size: 12px;
+}
