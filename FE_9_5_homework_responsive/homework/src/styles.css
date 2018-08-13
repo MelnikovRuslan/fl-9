@@ -1,0 +1,192 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ 
+:root {
+  --bg-color--dark: #0a1223;
+  --bg-color--light: #fff;
+  --link: #5d5d5d;
+  --link--active: #54597d;
+  --link--hover: #54597d;
+  --article-title: #ddd;
+  --article-title--dark: #000;
+  --thumbnail--description: #5d5d5d;
+
+  * These styles are needed only for media query max-width: 575px *
+
+  * The 'Up' button (circle button at right bottom corner) *
+  --btn-color: #fff;
+  --btn-bg-color: #5ebcff;
+
+  --navigation-border-bottom: #ddd;
+  --thumbnail-title: #484747;
+}
+*/
+
+
+/* Your styles go here */
+
+body{
+  background-color:#0a1223;
+  font-family:"Open Sans", sans-serif;
+}
+header .nav{
+  height:60px;
+  float:right;
+  list-style:none;
+  margin-top:20px;
+  margin-bottom:100px;
+  padding:0px;
+}
+header .nav li{
+  width:100px;
+  float:left;
+}
+header .nav li a{
+  line-height:40px;
+  width:100%;
+  font-size:16px;
+  text-align:center;
+  display:inline-block;
+  text-decoration:none;
+  color:#5d5d5d;
+}
+header .nav li a:hover{
+  color:#54597d;
+  border-bottom:2px solid #ddd;
+}
+header .nav li a:active{
+  color:#54597d;
+  border-bottom:2px solid #0dd3fd;
+}
+header .nav li a:visited{
+  color:#54597d;
+}
+.about{
+  margin-bottom:160px;
+}
+.about h1{
+  text-align:center;
+  clear:both;
+  color:#ffffff;
+  margin-bottom:120px;
+  font-size:60px;
+}
+.about h1 span{
+  font-style:italic;
+}
+.about .container{
+  max-width:1100px;
+  margin:0 auto;
+}
+.about .row{
+  width:100%;
+  display:flex;
+}
+.photo, .text{
+  width:50%;
+  padding:0px 22px;
+}
+.photo img{
+  width:100%;
+}
+.about .row:nth-child(even){
+  flex-direction: row-reverse;
+}
+.text h2{
+  color:#ddd;
+  font-size:35px;
+  background: linear-gradient(45deg, #ddd 30%, #5d5d5d 70%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.text p{
+  color:red;
+  color:#5d5d5d;
+  font-size:17px;
+  text-indent:20px;
+  text-align:justify;
+}
+.about a{
+  width:60px;
+  height:60px;
+  text-decoration:none;
+  font-weight:bold;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:fixed;
+  bottom:40px; 
+  right:20px;
+  color:#ffffff;
+  border-radius: 50%;
+  background-color:#5ebcff;
+  box-shadow:4px 6px 10px #C0C0C0;
+}
+
+/*medium responsive*/
+@media(max-width:991px){
+  header .nav{
+    width:100%;
+    margin-bottom:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+  }
+  .about .container{
+    max-width:520px;
+    margin:0 auto;
+  }
+  .about .row{
+    display:block;
+  }
+  .photo, .text{
+    width:100%;
+    padding:0px;
+    display:inline-block;
+  }
+}
+
+/*small responsive*/
+@media(max-width:575px){
+  body{
+    background-color:#fff;
+  }
+  header .nav{
+    height:60px;
+    display:block;
+    list-style:none;
+  }
+  header .nav li{
+    width:100%;
+    display:block;
+  }
+  header .nav li a{
+    font-size:18px;
+    text-align:left;
+    border-bottom:1px solid #dddddd;
+  }
+  .about h1{
+    color:#000;
+  }
+  .about .container{
+    max-width:280px;
+    margin:0 auto;
+  }
+  .about .row{
+    display:block;
+  }
+  .text h2{
+    background:#484747;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+   header .nav-active, a:active{
+    font-weight:bold;
+  }
+  .about a{
+    display:flex;
+  }
+}
